@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 735.2px;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url(home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navlink {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navlink li {
+    list-style: none;
+    margin: 20px;
+
+}
+
+.navlink li a {
+    text-decoration: none;
+    color: palevioletred;
+    position: relative;
+}
+
+a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: palevioletred;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.3s;
+}
+
+.navlink li a:hover::after{
+    width:100%;
+}
+
+h1 {
+    color: palevioletred;
+    font-weight: bolder;
+    font-size: 65px;
+    letter-spacing: 10px;
+    line-height:4;
+    text-align: center;
+}
+
+/*.booknow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}*/
+/*.sale {
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+    font-weight:bolder;
+    font-size: 18px;
+    color:black;
+    opacity: 0.5;
+    background-color: palevioletred;
+    transition: all 0.5s;
+
+}
+.booknow > .sale:hover {
+    background-color: aliceblue;
+    
+}
+*/
+.booknow {
+    width:320px;
+    height:400px;
+    background-color: aliceblue;
+    position:relative;
+    left:0px;
+    right: 0px;
+    margin: auto;
+    background-color: rgba(255,221,255,0.3);
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+    outline: 0;
+    border-color: palevioletred;
+}
+
+input[type="button"]{
+    border-radius: 5px;
+    outline: 0;
+    border-color: palevioletred;
+    background-color: palevioletred;
+}
